@@ -23,8 +23,8 @@ const Chat = () => {
       <div className="chat_input_form">
         <div className="chat_input">
           <input
-            onKeyPress={(e)=>{
-              if (e.code === 'Enter' && message !== "") {
+            onKeyPress={(e) => {
+              if (e.code === "Enter" && message !== "") {
                 dispatch(addMessage(message));
                 setMessage("");
               }

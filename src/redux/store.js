@@ -1,11 +1,10 @@
 import { combineReducers, createStore } from "redux";
-import messages  from "./message/messages"
-
+import messages from "./message/messages";
 
 const rootReducer = combineReducers({
-    messages
-})
+  messages,
+});
 
-const store = createStore(rootReducer)
+const store = createStore(rootReducer);
 
 export default store;
